@@ -1,0 +1,130 @@
+.wwd-wrapper {
+    position: relative;
+}
+
+.wwd-container {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.wwd-head {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.wwd-blocks {
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+}
+
+.wwd-block {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-radius: 2rem;
+}
+
+
+.block-features {
+    display: flex;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.block-feature {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    border: 1px solid hsla(0, 0%, 59%, 0.17);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--title-color);
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    font-weight: 500;
+    height: fit-content;
+}
+
+.wwd-block:nth-child(1)>.block-features>:nth-child(2) {
+    margin-top: 3rem;
+}
+
+.wwd-block:nth-child(2)>.block-features>:nth-child(1),
+.wwd-block:nth-child(2)>.block-features>:nth-child(3) {
+    margin-top: 3rem;
+}
+
+.wwd-support {
+    display: flex;
+    padding: 2rem;
+    box-shadow: var(--shadow);
+    border-radius: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2.5rem;
+    background: white;
+}
+
+.wwd-support>div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.wwd-support> :nth-child(1) {
+    flex: 1;
+}
+
+.wwd-support> :nth-child(2) {
+    flex: 1.6;
+}
+
+
+@media (max-width: 990px) {
+    .wwd-blocks {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .wwd-support {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .wwd-blocks {
+        width: 80%;
+        margin: auto;
+    }
+
+    .block-features {
+        flex-direction: column;
+    }
+
+    .block-feature {
+        margin-top: 0rem !important;
+    }
+}
